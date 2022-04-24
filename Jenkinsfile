@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        git 'https://github.com/patebija/simple-no...
+        git 'https://github.com/almedinakerla/nodejs-react-test'
         bat 'npm install'
       }}}
 
