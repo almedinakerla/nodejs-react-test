@@ -9,7 +9,16 @@ pipeline {
       steps {
         git 'https://github.com/almedinakerla/nodejs-react-test'
         sh 'npm install'
-      }}}
+      }}
+    stage('Test') {
+      steps {
+        sh './jenkins/scripts/test.sh'
+            }
+       }
+
+
+	
+  }
 
 
 }
